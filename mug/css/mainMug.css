@@ -7,6 +7,7 @@ $bgcolor: pink;
 body {
   padding: 50px;
   background: $bgcolor;
+  background-color: pink
 }
 
 .mug {
