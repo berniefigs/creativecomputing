@@ -1,0 +1,17 @@
+body {
+	background: pink;
+	padding: 20px;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	background: black;
+}
+td {
+    width: 100px; height: 100px;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+	background: white;
+}
