@@ -61,11 +61,4 @@ body {
   user-select: none;
   cursor: default;
 }
-.cup::before,
-.cup::after {
-  content: '';
-  position: absolute;
-  display: block;
-}
-
 
