@@ -1,0 +1,19 @@
+.esq,
+.dir {
+  width: 150px;
+  height: 75px;
+  border: pink 3px solid;
+  float: left;
+  border-radius: 50% / 25%;
+}
+
+.haste {
+  margin-top: 30px;
+  margin-left: -3px;
+  margin-right: -3px;
+  width: 30px;
+  height: 25px;
+  border-top: pink 4px solid;
+  float: left;
+  border-radius: 40%;
+}
