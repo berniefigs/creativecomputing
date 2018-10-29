@@ -111,18 +111,4 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
-.cup .coffee::before {
-  -webkit-animation: smo 2s infinite;
-  -moz-animation: smo 2s infinite;
-  -o-animation: smo 2s infinite;
-  -ms-animation: smo 2s infinite;
-  animation: smo 2s infinite;
-}
-.cup .coffee::after {
-  -webkit-animation: smo2 3s infinite;
-  -moz-animation: smo2 3s infinite;
-  -o-animation: smo2 3s infinite;
-  -ms-animation: smo2 3s infinite;
-  animation: smo2 3s infinite;
-}
 
