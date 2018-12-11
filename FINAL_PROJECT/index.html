@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<meta name="viewpoint" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+  		<style>
+
+  			
+ul {
+  position: fixed;
+  top: 0;
+width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 3px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: #white;
+}
+
+
+body{
+  				background: white;
+  				height:10100px;
+  				width:1000px;
+  			}
+
+  			.flex-container {
+  				display: flex;
+  				flex-direction: column;
+  			}
+
+
+			#ok01{
+				background: url(image/01.jpg) no-repeat;
+				position: relative;
+  				z-index: 2;
+  				width:800px;
+				height:500px;
+				left: 200px;
+				top:60px;
+				
+  				}
+			#ok04{
+			   background: url(image/02.jpg) no-repeat;
+				position: relative;
+				width: 500px;
+  				height: 500px;
+  				left: 100px;
+				top:100px;
+  				z-index: 1;
+  				
+			} 
+			
+			#ok02{
+				background: url(image/03.jpg) 70% 50% no-repeat;
+				position:relative
+  				width:500px;
+				height:500px;
+				left: 40px;
+				right: 300px;
+				top: 500px
+				z-index: 1;
+				
+			}
+
+			#ok03{
+				background: url(image/04.jpg) right -5% no-repeat; 
+				left: -100%;
+				width: 100%;
+  				height: 100%;
+  				top: 500;
+  				position: fixed;
+  				z-index: 2
+        }
+#sliderWrapper, #sliderBullets, #gallery{z-index: 3}
+    
+
+</style>
+			
+  	</head>
+
+
+
+<body>
+	  <audio controls autoplay="autoplay">
+  
+  <source src="media/Crumb.mp3" type="audio/mpeg" "autoplay loop controls">
+ 
+</audio>
+
+    <div class="flex-container">
+    <div id="ok01"></div>
+    <div id="ok04"></div>
+    <div id="ok02"></div>
+    <div id="ok03"></div>
+    
+    </div>
+  
+<ul>
+  <li><a href="#about">PART_3</a></li>
+  <li><a href="#contact">PART_2</a></li>
+  <li><a href="https://berniefigs.github.io/creativecomputing/PART_ONE/html.html">PART_1</a></li>
+  <li><a href="#home">HOME</a></li>
+
+</ul>
+
+<script>
+		// Create cross browser requestAnimationFrame method:
+window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame
+ || function(f){setTimeout(f, 1000/60)}
+ 
+var ok1 = document.getElementById('ok01')
+var ok2 = document.getElementById('ok02')
+var ok3 = document.getElementById('ok03')
+var ok4 = document.getElementById('ok04')
+ 
+var scrollheight = document.body.scrollHeight // height of entire document
+var windowheight = window.innerHeight // height of browser window
+ 
+function parallaxbubbles(){
+ var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+ var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+ok1.style.top = -scrollamount - 100 * .2 + 'px' // move bubble1 at 20% of scroll rate
+ok2.style.top = -scrollamount - 100 * .2+ 'px' // move bubble2 at 50% of scroll rate
+ok3.style.left = -100 + (scrollamount + 0) + '%' // set position of fish in percentage (starts at -100%)
+ok4.style.top = -scrollamount - 100 * .2 + 'px'
+}
+ 
+window.addEventListener('scroll', function(){ // on page scroll
+ requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+}, false)
+ 
+window.addEventListener('resize', function(){ // on window resize
+ var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+ var scrollamount = (scrolltop / (scrollheight-windowheight)) * 10 // get amount scrolled (in %)
+ok03.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
+}, false)
+	</script>
+		
+    <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+        <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+
+
+
+
+   <div><div id="sliderWrapper">
+    <div id="gallery"></div>
+    <div id="sliderBullets"></div></div>
+
+
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+    <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+          <h1>NEW YORK</h1>
+   <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+      <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+       <h1>NEW YORK</h1>
+     <h1>NEW YORK</h1>
+ 
+
+	
+
+  
+
+
+
+
+
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+
+</body>
+
+
+ 
+
+  
+<script src="js/index.js"></script>
+   
+
+
+</html>
+
