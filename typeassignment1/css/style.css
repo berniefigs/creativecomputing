@@ -1,0 +1,58 @@
+body {
+
+  padding: 10% 10% 10% 10%;
+  margin: 20%;
+  font-family: 'PublicSansRegular';
+   font-weight: normal;
+   font-style: normal;
+ background-color: white;
+ color: black;
+
+}
+
+
+
+#page {
+  padding-bottom: 10%;
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:flex;
+  flex-wrap:no-wrap;
+}
+.pane {
+  flex:0 0 100vw;
+  height:100vh;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+
+}
+
+
+.pane:nth-child(4n+2)  {
+  background-color: white;
+}
+.pane:nth-child(4n+3)  {
+  background-color: white;
+}
+.pane:nth-child(4n+4)  {
+  background-color: white;
+}
+
+.pane:nth-child(4n+5)  {
+  background-color: white;
+}
+
+.pane:nth-child(4n+6)  {
+  background-color: white;
+}
+.pane:last-child {
+  background-color: white;
+}
+
