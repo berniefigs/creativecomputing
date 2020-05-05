@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+
+    body {
+      font-family: 'arial';
+      color: white;
+      text-align: center;
+      font-size: 5vw;
+      background-color: black;
+      overflow: hidden;
+      padding-top: 4%;
+      overflow-y: hidden;
+    }
+
+p {color: black;
+  font-family: 'arial';
+  font-size: 2vw;
+}
+
+button  {font-size: 2vw;
+text-align: left;
+object-position: left;}
+   
+  </style>
+  </head>
+  <body>
+<div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">?</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-white"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topleft">&times;</span>
+        <h2>Free write</h2>
+      </header>
+      <div class="w3-container">
+        <p>Click and drag to write. Nothing gets saved. <br> Most of us do not think in complete sentences but in self-interrupted, looping, impressionistic cacophony,” she said. Writing helps us track our spinning thoughts and feelings, which can lead to key insights.</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script type="text/javascript">
+    var random=new Array(); 
+
+    random[0]='How are you feeling?'; 
+    random[1]='3 words to describe yourself.'; 
+    random[2]='Words you live by.'; 
+    random[3]='Tell me something random.'; 
+    random[4]='What is currently on your mind?';
+    random[5]='Write a word you like.'; 
+    random[6]='Something you think about often.'; 
+var id=Math.round(Math.random()*(random.length-1)); document.write(random[id]); </script>  
+    <script src="sketch.js"></script>
+    
+
+  </body>
+</html>
